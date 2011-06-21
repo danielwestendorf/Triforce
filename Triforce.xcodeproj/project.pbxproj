@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8201001E13B04B96003ACF2B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8201001D13B04B96003ACF2B /* Cocoa.framework */; };
+		8201002013B04B96003ACF2B /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8201001F13B04B96003ACF2B /* MacRuby.framework */; };
+		8201002713B04B96003ACF2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8201002513B04B96003ACF2B /* InfoPlist.strings */; };
+		8201002A13B04B96003ACF2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8201002913B04B96003ACF2B /* main.m */; };
+		8201002E13B04B97003ACF2B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8201002C13B04B97003ACF2B /* MainMenu.xib */; };
+		8201003113B04B97003ACF2B /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8201003013B04B97003ACF2B /* rb_main.rb */; };
+		8201003313B04B97003ACF2B /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8201003213B04B97003ACF2B /* AppDelegate.rb */; };
+		8201003613B04B97003ACF2B /* Triforce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8201003413B04B97003ACF2B /* Triforce.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8201001913B04B96003ACF2B /* Triforce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triforce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8201001D13B04B96003ACF2B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8201001F13B04B96003ACF2B /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		8201002413B04B96003ACF2B /* Triforce-Info.plist */ = {isa = PBXFileReference; path = "Triforce-Info.plist"; sourceTree = "<group>"; };
+		8201002613B04B96003ACF2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8201002813B04B96003ACF2B /* Triforce-Prefix.pch */ = {isa = PBXFileReference; path = "Triforce-Prefix.pch"; sourceTree = "<group>"; };
+		8201002913B04B96003ACF2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8201002D13B04B97003ACF2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8201003013B04B97003ACF2B /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		8201003213B04B97003ACF2B /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		8201003513B04B97003ACF2B /* Triforce.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Triforce.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8201001613B04B96003ACF2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8201001E13B04B96003ACF2B /* Cocoa.framework in Frameworks */,
+				8201002013B04B96003ACF2B /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8201000E13B04B96003ACF2B = {
+			isa = PBXGroup;
+			children = (
+				8201002213B04B96003ACF2B /* Triforce */,
+				8201001C13B04B96003ACF2B /* Frameworks */,
+				8201001A13B04B96003ACF2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8201001A13B04B96003ACF2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8201001913B04B96003ACF2B /* Triforce.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8201001C13B04B96003ACF2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8201001D13B04B96003ACF2B /* Cocoa.framework */,
+				8201001F13B04B96003ACF2B /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8201002213B04B96003ACF2B /* Triforce */ = {
+			isa = PBXGroup;
+			children = (
+				8201003213B04B97003ACF2B /* AppDelegate.rb */,
+				8201003413B04B97003ACF2B /* Triforce.xcdatamodeld */,
+				8201002B13B04B97003ACF2B /* Resources */,
+				8201002F13B04B97003ACF2B /* Other Sources */,
+				8201002313B04B96003ACF2B /* Supporting Files */,
+			);
+			path = Triforce;
+			sourceTree = "<group>";
+		};
+		8201002313B04B96003ACF2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8201002413B04B96003ACF2B /* Triforce-Info.plist */,
+				8201002513B04B96003ACF2B /* InfoPlist.strings */,
+				8201002813B04B96003ACF2B /* Triforce-Prefix.pch */,
+				8201002913B04B96003ACF2B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8201002B13B04B97003ACF2B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8201002C13B04B97003ACF2B /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8201002F13B04B97003ACF2B /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8201003013B04B97003ACF2B /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		8201002113B04B96003ACF2B /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = 8201003C13B04B97003ACF2B /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		8201001813B04B96003ACF2B /* Triforce */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8201003913B04B97003ACF2B /* Build configuration list for PBXNativeTarget "Triforce" */;
+			buildPhases = (
+				8201001513B04B96003ACF2B /* Sources */,
+				8201001613B04B96003ACF2B /* Frameworks */,
+				8201001713B04B96003ACF2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Triforce;
+			productName = Triforce;
+			productReference = 8201001913B04B96003ACF2B /* Triforce.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8201001013B04B96003ACF2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Scott USA";
+			};
+			buildConfigurationList = 8201001313B04B96003ACF2B /* Build configuration list for PBXProject "Triforce" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8201000E13B04B96003ACF2B;
+			productRefGroup = 8201001A13B04B96003ACF2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8201001813B04B96003ACF2B /* Triforce */,
+				8201002113B04B96003ACF2B /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8201001713B04B96003ACF2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8201002713B04B96003ACF2B /* InfoPlist.strings in Resources */,
+				8201002E13B04B97003ACF2B /* MainMenu.xib in Resources */,
+				8201003113B04B97003ACF2B /* rb_main.rb in Resources */,
+				8201003313B04B97003ACF2B /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8201001513B04B96003ACF2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8201002A13B04B96003ACF2B /* main.m in Sources */,
+				8201003613B04B97003ACF2B /* Triforce.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8201002513B04B96003ACF2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8201002613B04B96003ACF2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8201002C13B04B97003ACF2B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8201002D13B04B97003ACF2B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8201003713B04B97003ACF2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8201003813B04B97003ACF2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8201003A13B04B97003ACF2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Triforce/Triforce-Prefix.pch";
+				INFOPLIST_FILE = "Triforce/Triforce-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8201003B13B04B97003ACF2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Triforce/Triforce-Prefix.pch";
+				INFOPLIST_FILE = "Triforce/Triforce-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8201003D13B04B97003ACF2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		8201003E13B04B97003ACF2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8201001313B04B96003ACF2B /* Build configuration list for PBXProject "Triforce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8201003713B04B97003ACF2B /* Debug */,
+				8201003813B04B97003ACF2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8201003913B04B97003ACF2B /* Build configuration list for PBXNativeTarget "Triforce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8201003A13B04B97003ACF2B /* Debug */,
+				8201003B13B04B97003ACF2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8201003C13B04B97003ACF2B /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8201003D13B04B97003ACF2B /* Debug */,
+				8201003E13B04B97003ACF2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8201003413B04B97003ACF2B /* Triforce.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8201003513B04B97003ACF2B /* Triforce.xcdatamodel */,
+			);
+			currentVersion = 8201003513B04B97003ACF2B /* Triforce.xcdatamodel */;
+			path = Triforce.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8201001013B04B96003ACF2B /* Project object */;
+}
