@@ -21,9 +21,9 @@
 		8201001913B04B96003ACF2B /* Triforce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triforce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8201001D13B04B96003ACF2B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8201001F13B04B96003ACF2B /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
-		8201002413B04B96003ACF2B /* Triforce-Info.plist */ = {isa = PBXFileReference; path = "Triforce-Info.plist"; sourceTree = "<group>"; };
+		8201002413B04B96003ACF2B /* Triforce-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Triforce-Info.plist"; sourceTree = "<group>"; };
 		8201002613B04B96003ACF2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8201002813B04B96003ACF2B /* Triforce-Prefix.pch */ = {isa = PBXFileReference; path = "Triforce-Prefix.pch"; sourceTree = "<group>"; };
+		8201002813B04B96003ACF2B /* Triforce-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Triforce-Prefix.pch"; sourceTree = "<group>"; };
 		8201002913B04B96003ACF2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8201002D13B04B97003ACF2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8201003013B04B97003ACF2B /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
