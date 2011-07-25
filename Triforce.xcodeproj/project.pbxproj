@@ -15,6 +15,8 @@
 		8201003113B04B97003ACF2B /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8201003013B04B97003ACF2B /* rb_main.rb */; };
 		8201003313B04B97003ACF2B /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8201003213B04B97003ACF2B /* AppDelegate.rb */; };
 		8201003613B04B97003ACF2B /* Triforce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8201003413B04B97003ACF2B /* Triforce.xcdatamodeld */; };
+		82D76D2C13DDD93500C70BD8 /* ImgBrowser.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82D76D2B13DDD93500C70BD8 /* ImgBrowser.rb */; };
+		82D76D2E13DDDBD100C70BD8 /* Asset.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82D76D2D13DDDBD100C70BD8 /* Asset.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		8201003013B04B97003ACF2B /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		8201003213B04B97003ACF2B /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
 		8201003513B04B97003ACF2B /* Triforce.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Triforce.xcdatamodel; sourceTree = "<group>"; };
+		82D76D2B13DDD93500C70BD8 /* ImgBrowser.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ImgBrowser.rb; sourceTree = "<group>"; };
+		82D76D2D13DDDBD100C70BD8 /* Asset.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Asset.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,11 +77,12 @@
 		8201002213B04B96003ACF2B /* Triforce */ = {
 			isa = PBXGroup;
 			children = (
-				8201003213B04B97003ACF2B /* AppDelegate.rb */,
+				82D76D2F13DDDD1900C70BD8 /* Delegates */,
 				8201003413B04B97003ACF2B /* Triforce.xcdatamodeld */,
 				8201002B13B04B97003ACF2B /* Resources */,
 				8201002F13B04B97003ACF2B /* Other Sources */,
 				8201002313B04B96003ACF2B /* Supporting Files */,
+				82D76D2D13DDDBD100C70BD8 /* Asset.rb */,
 			);
 			path = Triforce;
 			sourceTree = "<group>";
@@ -107,6 +112,15 @@
 				8201003013B04B97003ACF2B /* rb_main.rb */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		82D76D2F13DDDD1900C70BD8 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				82D76D2B13DDD93500C70BD8 /* ImgBrowser.rb */,
+				8201003213B04B97003ACF2B /* AppDelegate.rb */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +165,7 @@
 		8201001013B04B96003ACF2B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				ORGANIZATIONNAME = "Scott USA";
+				ORGANIZATIONNAME = "Daniel Westendorf";
 			};
 			buildConfigurationList = 8201001313B04B96003ACF2B /* Build configuration list for PBXProject "Triforce" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -180,6 +194,8 @@
 				8201002E13B04B97003ACF2B /* MainMenu.xib in Resources */,
 				8201003113B04B97003ACF2B /* rb_main.rb in Resources */,
 				8201003313B04B97003ACF2B /* AppDelegate.rb in Resources */,
+				82D76D2C13DDD93500C70BD8 /* ImgBrowser.rb in Resources */,
+				82D76D2E13DDDBD100C70BD8 /* Asset.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,12 +271,17 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = x86_64;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Triforce/Triforce-Prefix.pch";
 				INFOPLIST_FILE = "Triforce/Triforce-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -273,11 +294,16 @@
 				ARCHS = x86_64;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Triforce/Triforce-Prefix.pch";
 				INFOPLIST_FILE = "Triforce/Triforce-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -314,6 +340,7 @@
 				8201003B13B04B97003ACF2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8201003C13B04B97003ACF2B /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -322,6 +349,7 @@
 				8201003E13B04B97003ACF2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

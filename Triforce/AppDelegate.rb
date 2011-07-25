@@ -3,13 +3,29 @@
 #  Triforce
 #
 #  Created by Daniel Westendorf on 6/20/11.
-#  Copyright 2011 Scott USA. All rights reserved.
+#  Copyright 2011 Daniel Westendorf. All rights reserved. 
 #
 
 class AppDelegate
-    attr_accessor :window
+    attr_accessor :window, :image_browser
+    
+    def awakeFromNib
+        @window.registerForDraggedTypes([NSFilenamesPboardType])
+    end
+    
     def applicationDidFinishLaunching(a_notification)
-        # Insert code here to initialize your application
+        #NSLog "#{@image_browser.image_browser_view.methods(false, true)}"
+    end
+    
+    #drag'n drop code
+    def draggingEntered(sender)
+        sourceDragMask = sender.draggingSourceOperationMask
+        pasteBoard = sender.draggingPasteBoard
+        
+        if pasteBoard.types.containsObject(NSFilenamesPboardType)
+           return NSDragOperationLink 
+        end
+        return NSDragOperationLink
     end
 
     # Persistence accessors

@@ -3,12 +3,13 @@
 #  Triforce
 #
 #  Created by Daniel Westendorf on 6/20/11.
-#  Copyright (c) 2011 Scott USA. All rights reserved.
+#  Copyright (c) 2011 Daniel Westendorf. All rights reserved.
 #
 
 # Loading the Cocoa framework. If you need to load more frameworks, you can
 # do that here too.
 framework 'Cocoa'
+framework 'Quartz'
 
 # Loading all the Ruby project files.
 main = File.basename(__FILE__, File.extname(__FILE__))

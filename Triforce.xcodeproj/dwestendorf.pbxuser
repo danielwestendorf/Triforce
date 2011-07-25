@@ -1,0 +1,117 @@
+// !$*UTF8*$!
+{
+	8201001013B04B96003ACF2B /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 822CDF2E13DDFE8500E00A1E /* Triforce */;
+		activeTarget = 8201001813B04B96003ACF2B /* Triforce */;
+		codeSenseManager = 822CDF4113DDFE9C00E00A1E /* Code sense */;
+		executables = (
+			822CDF2E13DDFE8500E00A1E /* Triforce */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					488,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 333315717;
+			PBXWorkspaceStateSaveDate = 333315717;
+		};
+		perUserProjectItems = {
+			822CDF3713DDFE9700E00A1E /* PBXBookmark */ = 822CDF3713DDFE9700E00A1E /* PBXBookmark */;
+			822CDF4213DDFEB600E00A1E /* PBXTextBookmark */ = 822CDF4213DDFEB600E00A1E /* PBXTextBookmark */;
+		};
+		sourceControlManager = 822CDF4013DDFE9C00E00A1E /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8201001813B04B96003ACF2B /* Triforce */ = {
+		activeExec = 0;
+		executables = (
+			822CDF2E13DDFE8500E00A1E /* Triforce */,
+		);
+	};
+	8201002113B04B96003ACF2B /* Deployment */ = {
+		activeExec = 0;
+	};
+	8201003213B04B97003ACF2B /* AppDelegate.rb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 2210}}";
+			sepNavSelRange = "{136, 0}";
+			sepNavVisRange = "{0, 1133}";
+			sepNavWindowFrame = "{{15, 855}, {750, 558}}";
+		};
+	};
+	822CDF2E13DDFE8500E00A1E /* Triforce */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Triforce;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	822CDF3713DDFE9700E00A1E /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8201003213B04B97003ACF2B /* AppDelegate.rb */;
+	};
+	822CDF4013DDFE9C00E00A1E /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	822CDF4113DDFE9C00E00A1E /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	822CDF4213DDFEB600E00A1E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8201003213B04B97003ACF2B /* AppDelegate.rb */;
+		name = "AppDelegate.rb: 6";
+		rLen = 0;
+		rLoc = 136;
+		rType = 0;
+		vrLen = 1133;
+		vrLoc = 0;
+	};
+}
