@@ -1,1 +1,4 @@
 build/
+Triforce.xcodeproj/xcuserdata/*
+Triforce.xcodeproj/project.xcworkspace/xcuserdata/*
+.DS_Store
