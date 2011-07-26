@@ -15,6 +15,7 @@ class ImgBrowser
         @image_browser_view.animates = true
         @image_browser_view.setCanControlQuickLookPanel(true)
         @image_browser_view.setCellsStyleMask(12)
+        @image_browser_view.setAllowsEmptySelection(false)
         @image_browser_view.setAllowsMultipleSelection(false)
         @image_browser_view.setAllowsReordering(false)
         
@@ -32,6 +33,11 @@ class ImgBrowser
     def refresh
         @assets.sort_by! {|a| a.path}
         @image_browser_view.reloadData
+    end
+    
+    #delegate methods
+    def imageBrowserSelectionDidChange(browser)
+        @parent.asset_attributes.reload_attributes
     end
     
     #zoom buttons

@@ -7,10 +7,11 @@
 #
 
 class AppDelegate
-    attr_accessor :window, :image_browser
+    attr_accessor :window, :image_browser, :asset_attributes
     
     def awakeFromNib
-        @window.registerForDraggedTypes([NSFilenamesPboardType])
+        @window.setDelegate(self)
+        @window.registerForDraggedTypes(NSArray.arrayWithObjects(NSFilenamesPboardType, NSURLPboardType, NSPDFPboardType, nil))
     end
     
     def applicationDidFinishLaunching(a_notification)
@@ -19,13 +20,29 @@ class AppDelegate
     
     #drag'n drop code
     def draggingEntered(sender)
+        NSLog "called"
+        pboard = sender.draggingPasteboard
         sourceDragMask = sender.draggingSourceOperationMask
-        pasteBoard = sender.draggingPasteBoard
         
-        if pasteBoard.types.containsObject(NSFilenamesPboardType)
-           return NSDragOperationLink 
+        if pboard.types.containsObject(NSFilenamesPboardType)
+            NSLog 'called'
+            return NSDragOperationLink
         end
-        return NSDragOperationLink
+        return NSDragOperationNone
+    end
+    
+    def prepareForDragOperation(sender)
+        true
+    end
+    
+    def performDragOperation(sender)
+        pboard = sender.draggingPasteboard
+        
+        if pboard.types.containsObject(NSFilenamesPboardType)
+            files = pboard.propertyListForType(NSFilenamesPboardType)
+            NSLog "#{files}"
+        end
+        return true
     end
 
     # Persistence accessors

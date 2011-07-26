@@ -15,6 +15,7 @@
 		8201003113B04B97003ACF2B /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8201003013B04B97003ACF2B /* rb_main.rb */; };
 		8201003313B04B97003ACF2B /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8201003213B04B97003ACF2B /* AppDelegate.rb */; };
 		8201003613B04B97003ACF2B /* Triforce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8201003413B04B97003ACF2B /* Triforce.xcdatamodeld */; };
+		82881C6D13DF16720084CA01 /* AssetAttributes.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82881C6C13DF16720084CA01 /* AssetAttributes.rb */; };
 		82D76D2C13DDD93500C70BD8 /* ImgBrowser.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82D76D2B13DDD93500C70BD8 /* ImgBrowser.rb */; };
 		82D76D2E13DDDBD100C70BD8 /* Asset.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82D76D2D13DDDBD100C70BD8 /* Asset.rb */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,7 @@
 		8201003013B04B97003ACF2B /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		8201003213B04B97003ACF2B /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
 		8201003513B04B97003ACF2B /* Triforce.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Triforce.xcdatamodel; sourceTree = "<group>"; };
+		82881C6C13DF16720084CA01 /* AssetAttributes.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AssetAttributes.rb; sourceTree = "<group>"; };
 		82D76D2B13DDD93500C70BD8 /* ImgBrowser.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ImgBrowser.rb; sourceTree = "<group>"; };
 		82D76D2D13DDDBD100C70BD8 /* Asset.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Asset.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +82,6 @@
 				82D76D2F13DDDD1900C70BD8 /* Delegates */,
 				8201003413B04B97003ACF2B /* Triforce.xcdatamodeld */,
 				8201002B13B04B97003ACF2B /* Resources */,
-				8201002F13B04B97003ACF2B /* Other Sources */,
 				8201002313B04B96003ACF2B /* Supporting Files */,
 				82D76D2D13DDDBD100C70BD8 /* Asset.rb */,
 			);
@@ -102,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				8201002C13B04B97003ACF2B /* MainMenu.xib */,
+				8201002F13B04B97003ACF2B /* Other Sources */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -119,6 +121,7 @@
 			children = (
 				82D76D2B13DDD93500C70BD8 /* ImgBrowser.rb */,
 				8201003213B04B97003ACF2B /* AppDelegate.rb */,
+				82881C6C13DF16720084CA01 /* AssetAttributes.rb */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				8201003313B04B97003ACF2B /* AppDelegate.rb in Resources */,
 				82D76D2C13DDD93500C70BD8 /* ImgBrowser.rb in Resources */,
 				82D76D2E13DDDBD100C70BD8 /* Asset.rb in Resources */,
+				82881C6D13DF16720084CA01 /* AssetAttributes.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

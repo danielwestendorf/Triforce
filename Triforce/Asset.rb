@@ -42,9 +42,7 @@ class Asset
     def imageSubtitle
         size_to_string
     end
-    
-    private
-    
+        
     def get_uti
         uti = NSWorkspace.sharedWorkspace.typeOfFile(@path, error: nil)
         return unless uti
