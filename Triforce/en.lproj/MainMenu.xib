@@ -897,7 +897,6 @@
 									<string key="NSFrame">{{210, 10}, {382, 17}}</string>
 									<reference key="NSSuperview" ref="634697227"/>
 									<reference key="NSWindow"/>
-									<reference key="NSNextKeyView"/>
 									<int key="NSViewLayerContentsRedrawPolicy">2</int>
 									<string key="NSReuseIdentifierKey">_NS:3936</string>
 									<bool key="NSEnabled">YES</bool>
@@ -1167,7 +1166,7 @@
 											<bytes key="NSWhite">MC42NjY2NjY2NjY3AA</bytes>
 										</object>
 									</object>
-									<int key="NScvFlags">2</int>
+									<int key="NScvFlags">6</int>
 								</object>
 								<object class="NSScroller" id="1017401673">
 									<reference key="NSNextResponder" ref="437882919"/>

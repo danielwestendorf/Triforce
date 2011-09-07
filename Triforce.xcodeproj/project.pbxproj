@@ -18,6 +18,10 @@
 		82881C6D13DF16720084CA01 /* AssetAttributes.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82881C6C13DF16720084CA01 /* AssetAttributes.rb */; };
 		82D76D2C13DDD93500C70BD8 /* ImgBrowser.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82D76D2B13DDD93500C70BD8 /* ImgBrowser.rb */; };
 		82D76D2E13DDDBD100C70BD8 /* Asset.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82D76D2D13DDDBD100C70BD8 /* Asset.rb */; };
+		82D8183813FAD84D00780AEC /* jpegtran in Resources */ = {isa = PBXBuildFile; fileRef = 82D8183413FAD84D00780AEC /* jpegtran */; };
+		82D8183B13FAD84D00780AEC /* pngcrush in Resources */ = {isa = PBXBuildFile; fileRef = 82D8183713FAD84D00780AEC /* pngcrush */; };
+		82D8184113FB0D8900780AEC /* CSSMin.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82D8184013FB0D8900780AEC /* CSSMin.rb */; };
+		82D8185613FC127100780AEC /* jsmin in Resources */ = {isa = PBXBuildFile; fileRef = 82D8185513FC127100780AEC /* jsmin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		82881C6C13DF16720084CA01 /* AssetAttributes.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AssetAttributes.rb; sourceTree = "<group>"; };
 		82D76D2B13DDD93500C70BD8 /* ImgBrowser.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ImgBrowser.rb; sourceTree = "<group>"; };
 		82D76D2D13DDDBD100C70BD8 /* Asset.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Asset.rb; sourceTree = "<group>"; };
+		82D8183413FAD84D00780AEC /* jpegtran */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jpegtran; sourceTree = "<group>"; };
+		82D8183713FAD84D00780AEC /* pngcrush */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = pngcrush; sourceTree = "<group>"; };
+		82D8184013FB0D8900780AEC /* CSSMin.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = CSSMin.rb; sourceTree = "<group>"; };
+		82D8185513FC127100780AEC /* jsmin */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = jsmin; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +87,12 @@
 		8201002213B04B96003ACF2B /* Triforce */ = {
 			isa = PBXGroup;
 			children = (
+				82D8183313FAD84D00780AEC /* Resources */,
+				82BB0BC313E06E2D004C2D5F /* Classes */,
 				82D76D2F13DDDD1900C70BD8 /* Delegates */,
 				8201003413B04B97003ACF2B /* Triforce.xcdatamodeld */,
 				8201002B13B04B97003ACF2B /* Resources */,
 				8201002313B04B96003ACF2B /* Supporting Files */,
-				82D76D2D13DDDBD100C70BD8 /* Asset.rb */,
 			);
 			path = Triforce;
 			sourceTree = "<group>";
@@ -116,6 +125,14 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		82BB0BC313E06E2D004C2D5F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				82D76D2D13DDDBD100C70BD8 /* Asset.rb */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		82D76D2F13DDDD1900C70BD8 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,16 +143,28 @@
 			name = Delegates;
 			sourceTree = "<group>";
 		};
+		82D8183313FAD84D00780AEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82D8185513FC127100780AEC /* jsmin */,
+				82D8183413FAD84D00780AEC /* jpegtran */,
+				82D8183713FAD84D00780AEC /* pngcrush */,
+				82D8184013FB0D8900780AEC /* CSSMin.rb */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
 		8201002113B04B96003ACF2B /* Deployment */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "--compile --embed";
+			buildArgumentsString = "--embed";
 			buildConfigurationList = 8201003C13B04B97003ACF2B /* Build configuration list for PBXLegacyTarget "Deployment" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/local/bin/macruby_deploy;
+			buildWorkingDirectory = "";
 			dependencies = (
 			);
 			name = Deployment;
@@ -168,6 +197,7 @@
 		8201001013B04B96003ACF2B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0410;
 				ORGANIZATIONNAME = "Daniel Westendorf";
 			};
 			buildConfigurationList = 8201001313B04B96003ACF2B /* Build configuration list for PBXProject "Triforce" */;
@@ -200,6 +230,10 @@
 				82D76D2C13DDD93500C70BD8 /* ImgBrowser.rb in Resources */,
 				82D76D2E13DDDBD100C70BD8 /* Asset.rb in Resources */,
 				82881C6D13DF16720084CA01 /* AssetAttributes.rb in Resources */,
+				82D8183813FAD84D00780AEC /* jpegtran in Resources */,
+				82D8183B13FAD84D00780AEC /* pngcrush in Resources */,
+				82D8184113FB0D8900780AEC /* CSSMin.rb in Resources */,
+				82D8185613FC127100780AEC /* jsmin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +319,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Triforce/Triforce-Prefix.pch";
 				INFOPLIST_FILE = "Triforce/Triforce-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Triforce\"",
+					"\"$(SRCROOT)/Triforce/Resources\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -307,6 +346,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Triforce/Triforce-Prefix.pch";
 				INFOPLIST_FILE = "Triforce/Triforce-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Triforce\"",
+					"\"$(SRCROOT)/Triforce/Resources\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
